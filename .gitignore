@@ -1,0 +1,11 @@
+# Dependency directories
+node_modules/
+# Environment configuration file
+.env
+# Compiled TypeScript files
+/dist/
+dist/
+# macOS specific files
+.DS_Store
+# Windows specific files
+Thumbs.db
