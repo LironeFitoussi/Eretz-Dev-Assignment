@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "setup": "cd server && npm install --force && npm run start && cd ../client && npm install --force && npm run dev",
+    "setup": "cd server && npm install --force && cd ../client && npm install --force",
+    "server": "cd server && npm run start",
+    "client": "cd client && npm run dev",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
