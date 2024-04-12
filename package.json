@@ -1,0 +1,13 @@
+{
+  "name": "eretz-dev-assignment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "setup": "cd server && npm install --force && npm run start && cd ../client && npm install --force && npm run dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
