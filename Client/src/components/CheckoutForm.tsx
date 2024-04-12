@@ -1,9 +1,9 @@
-import styles from "./CheckoutForm.module.css";
 import React from "react";
 import { CustomerData, PaymentMethodData } from "../types";
 import CreditCard from "./CreditCard.tsx";
 
 interface Props {
+  orderStatus: string;
   validation: boolean;
   customerData: CustomerData;
   setCustomerData: React.Dispatch<React.SetStateAction<CustomerData>>;
@@ -13,6 +13,7 @@ interface Props {
 }
 
 const CheckoutForm: React.FC<Props> = ({
+  orderStatus,
   validation,
   customerData,
   setCustomerData,
@@ -88,7 +89,7 @@ const CheckoutForm: React.FC<Props> = ({
           className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
           onClick={handleCheckout}
         >
-          Pay
+          {orderStatus === "Processing" ? "Processing..." : "Checkout"}
         </button>
       </form>
     </div>

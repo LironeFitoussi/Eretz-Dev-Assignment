@@ -133,6 +133,7 @@ const CheckoutPage: React.FC = () => {
             <p className="text-xl font-semibold mt-4">Total: ${orderData.totalPrice}</p>
           </div>
           <CheckoutForm
+            orderStatus={orderStatus}
             validation={validation}
             customerData={customerData}
             setCustomerData={setCustomerData}
@@ -142,11 +143,11 @@ const CheckoutPage: React.FC = () => {
           />
         </div>
       </div>
-      <div className="text-center mt-4">
+      {/* <div className="text-center mt-4">
         <p className="text-lg font-semibold">
           Order Status: {orderStatus}
         </p>
-      </div>
+      </div> */}
       {/* Modal */}
       <Modal style={{
           overlay: {
@@ -159,6 +160,8 @@ const CheckoutPage: React.FC = () => {
           },
           content: {
             position: 'relative',
+            display: 'flex',
+            flexDirection: 'column',
             top: 'auto',
             left: 'auto',
             right: 'auto',
@@ -167,7 +170,7 @@ const CheckoutPage: React.FC = () => {
             background: '#ffffff',
             borderRadius: '8px',
             padding: '20px',
-            width: '80%',
+            width: '50%',
             maxHeight: '90vh',
             overflow: 'auto',
             boxShadow: '0px 4px 20px rgba(0, 0, 0, 0.1)',
