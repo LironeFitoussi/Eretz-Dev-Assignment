@@ -1,4 +1,4 @@
-#Eretz Dev Assignment#
+# Eretz Dev Assignment
 Welcome to the Eretz Dev Assignment repository! This project is designed as a front-end React checkout page and a Node.js backend server for an e-commerce website. The goal of this assignment is to evaluate your skills in React development, state management, API integration, testing, and front-end design.
 
 Introduction
